@@ -1,0 +1,12 @@
+<!-- templates/home.html -->
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Job Search</h1>
+  <form method="POST">
+    {{ form.hidden_tag() }}
+    {{ form.keywords.label }} {{ form.keywords() }}<br>
+    {{ form.location.label }} {{ form.location() }}<br>
+    {{ form.submit() }}
+  </form>
+{% endblock %}

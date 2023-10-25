@@ -1,10 +1,6 @@
 # app/selenium_bot.py
-class JobApplyBot:
-    def __init__(self, keywords, location):
-        self.keywords = keywords
-        self.location = location
-        # ... initialize other attributes
+from selenium import webdriver
 
-    def run(self):
-        # Implement the logic for job searching and applying
-        pass
+def search_jobs(keywords, location):
+    # Implement your Selenium job searching logic here
+    pass

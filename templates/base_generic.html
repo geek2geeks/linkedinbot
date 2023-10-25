@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}My LinkedIn Bot{% endblock %}</title>
+    <!-- Add your CSS links here -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <!-- Your header content -->
+    </header>
+
+    <nav>
+        <!-- Your navigation content -->
+    </nav>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <!-- Your footer content -->
+    </footer>
+
+    <!-- Add your JavaScript links here -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
